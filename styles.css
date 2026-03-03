@@ -1,0 +1,91 @@
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Metric Cards */
+div[data-testid="stMetricValue"] {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Custom Signal Colors */
+.signal-buy {
+    color: #00FF00 !important;
+    background-color: rgba(0, 255, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signal-sell {
+    color: #FF0000 !important;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signal-neutral {
+    color: #FFFF00 !important;
+    background-color: rgba(255, 255, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Chart Containers */
+div.stPlotlyChart {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+/* Dataframe Styling */
+div[data-testid="stDataFrame"] {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #0e0e0e;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #1f77b4;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.stButton > button:hover {
+    background-color: #2c8fd6;
+}
+
+/* Custom Cards */
+.custom-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #333;
+}
+
+/* Live Indicator */
+.live-indicator {
+    background-color: #00FF00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
