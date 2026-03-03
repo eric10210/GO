@@ -1,0 +1,39 @@
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Metric Cards */
+div[data-testid="stMetricValue"] {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Custom Signal Colors */
+.signal-buy {
+    color: #00FF00 !important;
+    background-color: rgba(0, 255, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signal-sell {
+    color: #FF0000 !important;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signal-neutral {
+    color: #FFFF00 !important;
+    background-color: rgba(255, 255, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Chart Containers */
+div.stPlotlyChart {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+}
