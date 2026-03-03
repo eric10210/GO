@@ -1,0 +1,34 @@
+app:
+  title: "Crypto Watch Pro"
+  icon: "🚀"
+  layout: "wide"
+  theme: "dark"
+
+data:
+  default_symbol: "BTCUSDT"
+  default_timeframe: "1h"
+  candle_limit: 200
+  watchlist:
+    - "BTCUSDT"
+    - "ETHUSDT"
+    - "BNBUSDT"
+    - "SOLUSDT"
+    - "XRPUSDT"
+
+indicators:
+  rsi_period: 14
+  sma_short: 20
+  sma_long: 50
+  ema_period: 20
+  bollinger_period: 20
+  bollinger_std: 2.0
+
+signals:
+  rsi_overbought: 70
+  rsi_oversold: 30
+  confidence_threshold: 70
+
+news:
+  enabled: true
+  source: "cryptopanic" # or "newsapi"
+  limit: 5
